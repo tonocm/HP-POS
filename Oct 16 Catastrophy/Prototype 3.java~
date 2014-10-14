@@ -1,0 +1,25 @@
+import java.io.*;
+class Prototype
+{
+public static void main (String [] args) throws IOException
+{
+  String a;
+  
+  PrintWriter stdOut = new PrintWriter(System.out, true);
+  BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
+  
+  stdOut.println("..Informaci—n para Factura..");
+  stdOut.println("Calle:");
+  a = stdIn.readLine();
+  stdOut.println("Numero de establecimiento (casa, oficina)");
+  a = stdIn.readLine();
+  stdOut.println("Colonia");
+  a = stdIn.readLine();
+  stdOut.println("Ciudad");
+  a = stdIn.readLine();
+    stdOut.println("Estado");
+  a = stdIn.readLine();  stdOut.println("Codigo Postal");
+  a = stdIn.readLine();  stdOut.println("1. Nombre de Empresa"); stdOut.println("2. Nombre de la Persona");
+  a = stdIn.readLine();
+}
+}

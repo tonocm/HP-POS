@@ -1,0 +1,38 @@
+*********************************************************************************
+*                               Recibo de Compra                                *
+*                              HP Store Monterrey                               *
+*                        DIRECCION DE LA COMPANIA PENDEIENTE                    *
+*                            PUEDE SER EN DOS LINEAS                            *
+*********************************************************************************
+
+Fecha de Compra: 20.10.2012
+Numero de Ticket: 201210203
+
+Vendedor: a
+Cliente: Test Client
+         Email: test@test.com
+         Telefono: 89909882
+
+
+    Nombre del Producto                 ID                            Precio
+ -----------------------             ---------                     -------------
+  HP Inspiron 456x                      45                            $15000.0
+                                        100                           $0.0
+
+
+
+
+
+
+
+
+                                                             -----------------
+Subtotal                                                     $12600.0
+IVA                                                          $2400.0
+Total                                                        $15000.0
+
+
+Metodos de Pago:
+     
+Efectivo $10000.0
+Tarjeta de Credito $5000.0

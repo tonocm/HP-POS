@@ -1,0 +1,351 @@
+import java.io.*;
+class Client implements Serializable
+{
+  private String name, phoneNumber, email, street, houseNumber, neighborhood, city, state, razonSocial,
+    officialID, productID[], serialNumber, employee, bankName;
+  private double sale, discountPercentage, paymentMethod[];
+  private int day, hours, minutes, checkNumber, authorizationNumber, expiracyDate, zipCode, month, year, cardNumber;
+  private Product cart[];
+  
+  
+  /**public Client(String name, String pNumber, String email, String street, String hNumber, String neighborhood,
+                String city, String state, int zipCode, String razonSocial, String officialID, String productID,
+                String serialNumber, String employee, String cardNumber, String bankName, char paymentMethod, double sale, 
+                double dPercentage, int day, int hours, int aNumber, int expDate, int checkNumber)
+  {
+    this.name = name;
+    phoneNumber = pNumber;
+    this.email = email;
+    this.street = street;
+    houseNumber=hNumber;
+    this.neighborhood = neighborhood;
+    this.city = city;
+    this.state = state;
+    this.zipCode = zipCode;
+    this.razonSocial = razonSocial;
+    this.officialID = officialID;
+    this.productID = productID;
+    this.serialNumber = serialNumber;
+    this.employee = employee;
+    this.cardNumber = cardNumber;
+    this.bankName = bankName;
+    this.paymentMethod = paymentMethod;
+    this.sale = sale;
+    discountPercentage = dPercentage;
+    this.day = day;
+    this.hours = hours;
+    authorizationNumber = aNumber;
+    expiracyDate = expDate;
+    this.checkNumber = checkNumber;
+  }**/
+  public Client(String name, String pNumber, String email, String street, String hNumber, String neighborhood,
+                String city, String state, int zipCode, String razonSocial, String officialID, String employee)
+  {
+    this.name = name;
+    phoneNumber = pNumber;
+    this.email = email;
+    this.street = street;
+    houseNumber=hNumber;
+    this.neighborhood = neighborhood;
+    this.city = city;
+    this.state = state;
+    this.zipCode = zipCode;
+    this.razonSocial = razonSocial;
+    this.officialID = officialID;
+    this.employee = employee;
+  }
+  public Client(String name, String pNumber, String email, String employee)
+  {
+    this.name = name;
+    phoneNumber = pNumber;
+    this.email = email;
+    this.employee = employee;
+  }
+  public String getName()
+  {
+    return name;
+  }
+  public String getPhoneNumber()
+  {
+    return phoneNumber;
+  }
+  public String getEmail()
+  {
+    return email;
+  }
+  public String getStreet()
+  {
+    return street;
+  }
+  public String getHouseNumber()
+  {
+    return houseNumber;
+  }
+  public String getNeighborhood()
+  {
+    return neighborhood;
+  }
+  public String getCity()
+  {
+    return city;
+  }
+  public String getState()
+  {
+    return state;
+  }
+  public int getZipCode()
+  {
+    return zipCode;
+  }
+  public String getRazonSocial()
+  {
+    return razonSocial;
+  }
+  public String getOfficialID()
+  {
+    return officialID;
+  }
+  public Product[] getCart()
+  {
+    return cart;
+  }
+  public String getEmployee()
+  {
+    return employee;
+  }
+  public int getCardNumber()
+  {
+    return cardNumber;
+  }
+  public String getBankName()
+  {
+    return bankName;
+  }
+  public double[] getPaymentMethod()
+  {
+    return paymentMethod;
+  }
+  public double getPrice()
+  {
+    return sale;
+  }
+  public double getDiscountPercentage()
+  {
+    return discountPercentage;
+  }
+  public int getDay()
+  {
+    return day;
+  }
+  public int getHours()
+  {
+    return hours;
+  }
+  public int getAuthorizationNumber()
+  {
+    return authorizationNumber;
+  }
+  public int getExpiracyDate()
+  {
+    return expiracyDate;
+  }
+  public int getCheckNumber()
+  {
+    return checkNumber;
+  }
+  public int getMonth()
+  {
+    return month;
+  }
+  public int getYear()
+  {
+    return year;
+  }
+  public int getMinutes()
+  {
+    return minutes;
+  }
+  public void setName(String name)
+  {
+    this.name = name;
+  }
+  public void setPhoneNumber(String phoneNumber)
+  {
+    this.phoneNumber = phoneNumber;
+  }
+  public void setEmail(String email)
+  {
+    this.email = email;
+  }
+  public void setStreet(String street)
+  {
+    this.street = street;
+  }
+  public void setHouseNumber(String hNumber)
+  {
+    houseNumber = hNumber;
+  }
+  public void setNeighborhood(String neighborhood)
+  {
+    this.neighborhood = neighborhood;
+  }
+  public void getCity(String city)
+  {
+    this.city = city;
+  }
+  public void setState(String state)
+  {
+    this.state = state;
+  }
+  public void setZipCode(int zip)
+  {
+    zipCode = zip;
+  }
+  public void setRazonSocial(String rSocial)
+  {
+    razonSocial = rSocial;
+  }
+  public void setOfficialID(String official)
+  {
+    officialID = official;
+  }
+  public void setCart(Product[] cart)
+  {
+    this.cart = cart;
+  }
+  public void setEmployee(String employee)
+  {
+    this.employee = employee;
+  }
+  public void setCardNumber(int cNumber)
+  {
+    cardNumber = cNumber;
+  }
+  public void setBankName(String bName)
+  {
+     bankName = bName;
+  }
+  public void setPaymentMethod(double[] pMethod)
+  {
+     paymentMethod = pMethod;
+  }
+  public void setPrice(double sale)
+  {
+    this.sale = sale;
+  }
+  public void setDiscountPercentage(double dPercentage)
+  {
+     discountPercentage = dPercentage;
+  }
+  public void setDay(int day)
+  {
+    this.day = day;
+  }
+  public void setHours(int hours)
+  {
+    this.hours = hours;
+  }
+  public void setAuthorizationNumber(int aNumber)
+  {
+    authorizationNumber = aNumber;
+  }
+  public void setExpiracyDate(int expDate)
+  {
+    expiracyDate = expDate;
+  }
+  public void setCheckNumber(int checkNumber)
+  {
+    this.checkNumber = checkNumber;
+  }
+  public void setMonth(int month)
+  {
+    this.month = month;
+  }
+  public void setYear(int year)
+  {
+    this.year = year;
+  }
+  public void setMinutes(int minutes)
+  {
+    this.minutes = minutes;
+  }
+  public String toString()
+  {
+    String out, outName, outTelephone, outEmail, outStreet, outHouse, outNeighborhood, outCity, outState, outCP,
+      outRazonSocial, outRFC, outPayment, paymentArray = "", outSale, outDiscount, outCart, outEmployee, outDay,
+      outHours, outCard, outExpDate, outBank, outCheck, outAuthorization, cartArray = "", display = "";
+    int i = 0;
+    
+    outName = "Cliente: " + name;
+    outTelephone = "Telefono: " + phoneNumber;
+    outEmail = "Email: " + email;
+    outStreet = "Calle: " + street;
+    outHouse = "Numero de Casa: " + houseNumber;
+    outNeighborhood = "Colonia: " + neighborhood;
+    outCity = "Ciudad: " + city;
+    outState = "Estado: " + state;
+    outCP = "Codigo Postal: " + zipCode;
+    outRazonSocial = "Razon Social: " + razonSocial;
+    outRFC = "RFC: " + officialID;
+    
+    for(i=0; i<paymentMethod.length; i++)
+    {
+      switch(i)
+      {
+        case 0:
+        {
+          display = "Efectivo $";
+        }
+        break;
+        case 1:
+        {
+          display = "Cheque $";
+        }
+        break;
+        case 2:
+        {
+          display = "Tarjeta de Debito $";
+        }
+        break;
+        case 3:
+        {
+          display = "Tarjeta de Credito $";
+        }
+        break;
+        default:
+        {
+          System.out.println("There's a Bug in the Payment Methods ");
+        }
+        break;
+      }
+      paymentArray = paymentArray + '\n' + display + paymentMethod[i];
+    }
+    
+    outPayment = "Metodo de Pago: " + paymentArray;
+    outSale = "Venta: " + sale;
+    outDiscount = "Descuento: " + discountPercentage;
+    
+    for(i=0; i<cart.length; i++)
+    {
+      cartArray = cartArray + '\n' + cart[i];
+    }
+    
+    outCart = "Carrito de Compras: " + cartArray;
+    outEmployee = "Empleado que Concreto la Venta: " + employee;
+    outDay = "Dia: " + day;
+    outHours = "Hora: " + hours;
+    outCard = "Numero de Tarjeta: " + cardNumber;
+    outExpDate = "Fecha de Expiraci—n: " + expiracyDate;
+    outBank = "Banco: " + bankName;
+    outCheck = "Numero de Cheque: " + checkNumber;
+    outAuthorization = "Autorizaci—n: " + authorizationNumber;
+    
+    out = (outName + '\n' + outTelephone + '\n' + outEmail + '\n' + '\n' + outStreet + '\n' + outHouse + '\n' +
+           outNeighborhood + '\n' + outCity + '\n' + outState + '\n' + outCP + '\n'+ outRazonSocial + '\n' + outRFC +
+           '\n' + '\n' + outPayment + '\n' + '\n' + outSale + '\n' + outDiscount + '\n' + '\n' + outCart + '\n' + '\n'
+           + outEmployee + '\n' + outDay + '\n' + outHours + '\n' + '\n' + outCard + '\n' + outExpDate + '\n' + outBank + '\n'
+           + outCheck + '\n' + outAuthorization);
+    
+    return out;
+  }
+}

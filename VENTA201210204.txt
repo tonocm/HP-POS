@@ -1,0 +1,37 @@
+*********************************************************************************
+*                               Recibo de Compra                                *
+*                              HP Store Monterrey                               *
+*                        DIRECCION DE LA COMPANIA PENDEIENTE                    *
+*                            PUEDE SER EN DOS LINEAS                            *
+*********************************************************************************
+
+Fecha de Compra: 20.10.2012
+Numero de Ticket: 201210204
+
+Vendedor: a
+Cliente: client test
+         Email: test@test.com
+         Telefono: 89909882
+
+
+    Nombre del Producto                 ID                            Precio
+ -----------------------             ---------                     -------------
+  HP Touch Smart 1600x                  100                           $18500.0
+  HP Touch Smart 1600x                  100                           $18500.0
+
+
+
+
+
+
+
+
+                                                             -----------------
+Subtotal                                                     $31080.0
+IVA                                                          $5920.0
+Total                                                        $37000.0
+
+
+Metodos de Pago:
+     
+Efectivo $37000.0

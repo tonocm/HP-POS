@@ -1,0 +1,37 @@
+*********************************************************************************
+*                               Recibo de Compra                                *
+*                              HP Store Monterrey                               *
+*                        DIRECCION DE LA COMPANIA PENDEIENTE                    *
+*                            PUEDE SER EN DOS LINEAS                            *
+*********************************************************************************
+
+Fecha de Compra: 19.10.2012
+Numero de Ticket: 201210199
+
+Vendedor: a
+Cliente: Hector Antonio Cardenas Marcos
+         Email: tonocm94@hotmail.com
+         Telefono: 83389987
+
+
+    Nombre del Producto                 ID                            Precio
+ -----------------------             ---------                     -------------
+  HP Touch Smart 100x                   100                           $20000.0
+  HP Touch Smart 100x                   100                           $20000.0
+
+
+
+
+
+
+
+
+                                                             -----------------
+Subtotal                                                     $33600.0
+IVA                                                          $6400.0
+Total                                                        $40000.0
+
+
+Metodos de Pago:
+     
+Efectivo $40000.0

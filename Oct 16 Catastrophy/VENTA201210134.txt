@@ -1,0 +1,8 @@
+**********************************************************
+*                         Recibo de Compra                          *
+*                        HP Store Monterrey                         *
+*                  DIRECCION DE LA COMPANIA PENDEIENTE              *
+*                      PUEDE SER EN DOS LINEAS                      *
+**********************************************************
+
+Fecha de Compra: 13.10.2012   4
